@@ -1,4 +1,14 @@
 
+/*字体文件*/
+@font-face {
+  font-family: 'lakeshore';
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LAKESHOR-webfont.woff') format('woff'),
+       url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+       url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+}
+
 .thumbnail-title{
   display: block;
   margin: 0;
@@ -26,6 +36,26 @@ a {
 
 /*设置boder*/
 .thumbnail-item{
+  /* display: block; */
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+
+.thumbnail-list{
+  list-style: none;
+  padding: 0;
+}
+
+/*兄弟选择器*/
+.thumbnail-item + .thumbnail-item{
+  margin-top: 10px;
+}
+
+/*标题*/
+.logo-text{
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lakeshore;
+  font-size: 37px;
 }
