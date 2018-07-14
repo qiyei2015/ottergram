@@ -128,3 +128,26 @@ a {
   position: relative;/*相对定位*/
   text-align: center;
 }
+
+/*媒体查询的样式*/
+@media all and (min-width:768px) {
+
+  .main-content{
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .thumbnail-list{
+    flex-direction: column;
+    order: 0;/*显示排列次序*/
+    margin-left: 20px;
+  }
+
+  .thumbnail-item {
+    max-width: 260px;
+  }
+
+  .thumbnail-item + .thumbnail-item{
+    margin-top: 20px;
+  }
+}

@@ -1,3 +1,3 @@
-browser-sync start --server --files "stylessheets/*.css, *.html"
+browser-sync start --server --files "script/*.js stylessheets/*.css, *.html"
 
 ##pause 
